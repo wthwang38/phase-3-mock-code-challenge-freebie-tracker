@@ -1,3 +1,5 @@
+
+
 puts "Creating companies..."
 Company.create(name: "Google", founding_year: 1998)
 Company.create(name: "Facebook", founding_year: 2004)
@@ -17,5 +19,9 @@ puts "Creating freebies..."
 # * and a freebie belongs to a company.                         *
 # ***************************************************************
 # Create freebies Here
-
+Freebie.create(item_name: "toy", value: 25, devs_id: 5,companies_id: 5)
+Freebie.create(item_name: "poster", value: 20, devs_id: 6,companies_id: 6)
+Freebie.create(item_name: "shoe", value: 60, devs_id: 7,companies_id: 7)
+Freebie.create(item_name: "game", value: 60, devs_id: 8,companies_id: 8)
+Freebie.create(item_name: "gum", value: 2, devs_id: 9,companies_id: 9)
 puts "Seeding done!"
